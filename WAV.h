@@ -61,7 +61,7 @@ public:
         fwrite(&chunk, sizeof(chunk), 1, f1);
 
         for (int i = 0; i < samples_count; i++) {
-            fwrite(&value[i], header.wBitsPerSample, 1, f1);
+            fwrite(&value[i], sizeof(short), 1, f1);
         }
         fclose(f1);
     }

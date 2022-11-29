@@ -18,7 +18,8 @@ public:
                         queue(convert_queue), input_1(inp), files(files_inp) {};
     void MakeConvert() {
         convertor *cur_convert;
-        for (int i = 0; i < queue.size(); i++) {
+        int size = queue.size();
+        for (int i = 0; i < size; i++) {
             cur_convert = TheConverterFactory::Instance().CreateConverter(queue.front().command);
             cur_convert->AddWav(input_1);
             cur_convert->AddConf(queue.front());
