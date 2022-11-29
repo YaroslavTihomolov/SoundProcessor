@@ -4,6 +4,8 @@
 
 #ifndef SOUNDPROCESSOR_WAV_H
 #define SOUNDPROCESSOR_WAV_H
+#include <fstream>
+#include <cstring>
 
 class wav_file {
 private:
@@ -28,10 +30,11 @@ private:
     int samples_count;
     chunk_t chunk;
 public:
+    wav_file() = default;
     wav_header_t header;
     unsigned long *value;
-    wav_file(char *file_name) {
-        FILE *f = fopen(file_name, "rb");
+    wav_file(std::string file_name) {
+        FILE *f = fopen(file_name.c_str(), "rb");
         fread(&header, sizeof(wav_header_t), 1, f);
         fseek(f, header.fLen - 16, SEEK_CUR);
 
@@ -58,7 +61,7 @@ public:
         fwrite(&chunk, sizeof(chunk), 1, f1);
 
         for (int i = 0; i < samples_count; i++) {
-            fwrite(&value[i], sizeof(short), 1, f1);
+            fwrite(&value[i], header.wBitsPerSample, 1, f1);
         }
         fclose(f1);
     }

@@ -3,7 +3,7 @@ project(SoundProcessor)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(SoundProcessor main.cpp Parser/Parser.h Parser/Parser.cpp WAV.h converter.h Fabriс.h)
+add_executable(SoundProcessor main.cpp Parser/Parser.h Parser/Parser.cpp WAV.h converter.h Fabric.h txt_parser.h FabricRegistration.h Fabric.cpp CovertWav.h)
 
 set(Boost_INCLUDE_DIR C:/MinGW/include/)
 set(Boost_LIBRARY_DIR C:/MinGW/lib/)
