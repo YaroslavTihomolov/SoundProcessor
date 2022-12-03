@@ -11,31 +11,28 @@
 
 class convertor {
 public:
-    configuration conf;
-    wav_file file_1;
+    const long samples_in_sec = 44100;
+    unsigned long* sec_buffer_1;
+    unsigned long* sec_buffer_2;
     convertor() = default;
-    std::vector< std::string > files;
-    virtual void convert() {};
+    virtual unsigned long* convert() {};
 
-    void AddConf(configuration conf_input) {
-        conf = conf_input;
+    void AddFile_1(unsigned long* inp_sec) {
+        sec_buffer_1 = inp_sec;
     }
 
-    void AddWav(wav_file inp_wav) {
-        file_1 = inp_wav;
-    }
-
-    void AddFile(std::vector< std::string > files_inp) {
-        files = files_inp;
+    void AddFile_2(unsigned long* inp_sec_for_mix) {
+        sec_buffer_2 = inp_sec_for_mix;
     }
 };
 
 class mute: public convertor {
 public:
     mute() = default;
-    void convert() {
-        for (int i = conf.parameter_1 * file_1.header.nSamplesPerSec; i < conf.parameter_2 * file_1.header.nSamplesPerSec; i++)
-            file_1.value[i] = 0;
+    unsigned long* convert() {
+        for (long i = 0; i < samples_in_sec; i++)
+            sec_buffer_1[i] = 0;
+        return this->sec_buffer_1;
     }
 };
 
@@ -46,10 +43,10 @@ namespace {
 class mix: public convertor {
 public:
     mix() = default;
-    void convert() {
-        wav_file mix(files[conf.parameter_1 - 2]);
-        for (int i = conf.parameter_1 * file_1.header.nSamplesPerSec; i < conf.parameter_2 * file_1.header.nSamplesPerSec; i++)
-            file_1.value[i] = (file_1.value[i] + mix.value[i]) / 2;
+    unsigned long* convert() {
+        for (long i = 0; i < samples_in_sec; i++)
+            sec_buffer_1[i] = (sec_buffer_1[i] + sec_buffer_2[i]) / 2;
+        return sec_buffer_1;
     }
 };
 

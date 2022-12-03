@@ -10,7 +10,7 @@ void TheConverterFactory::RegisterConverter(const std::string name, const conver
 convertor* TheConverterFactory::CreateConverter(std::string converter_name) {
     auto it = converts.find(converter_name);
     if (it == converts.end()) {
-        throw ("Неизвестный идентификатор");
+        throw ("Unknown identifier");
     }
     return (it->second());
 }
