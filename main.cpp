@@ -1,7 +1,7 @@
-#include "WAV.h"
-#include "txt_parser.h"
+#include "Work with wav/WAV.h"
+#include "txt_parser/txt_parser.h"
 #include "Parser/Parser.h"
-#include "CovertWav.h"
+#include "ConverWav/CovertWav.h"
 
 int main(int argc, char **argv) {
     Parser input(argc, argv);
