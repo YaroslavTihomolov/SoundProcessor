@@ -7,7 +7,6 @@
 
 #include "Fabric.h"
 
-class wav_file;
 struct configuration;
 
 namespace ConverterFactoryRegistration {

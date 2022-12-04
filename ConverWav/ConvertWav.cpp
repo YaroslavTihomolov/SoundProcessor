@@ -11,6 +11,7 @@ void convert_wav::MakeConvert() {
     int size = queue.size();
     for (int i = 0; i < size; i++) {
         cur_convert = TheConverterFactory::Instance().CreateConverter(queue.front().command);
+
         if (queue.front().command == "mute") {
             for (int j = queue.front().parameter_1; j < queue.front().parameter_2; j++) {
                 input_1.GoToSecond(j);

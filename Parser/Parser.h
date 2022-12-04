@@ -14,19 +14,20 @@
 namespace po = boost::program_options;
 
 struct Parser {
-    Parser() = default;
-    Parser(int, char **);
     static Parser& Instance()
     {
         static Parser theSingleInstance;
         return theSingleInstance;
     }
     void ParserReg(std::string);
+    void ParsInput(int, char **);
     po::variables_map vm;
     std::vector<std::string> files;
     std::string output;
     std::string config;
+private:
     std::string help;
+    Parser() = default;
 };
 
 #endif //SOUNDPROCESSOR_PARSER_H
