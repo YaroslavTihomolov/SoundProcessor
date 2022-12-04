@@ -32,6 +32,17 @@ void convert_wav::MakeConvert() {
                 input_1.ChangeLastSec(cur_convert->convert());
             }
         }
+
+        if (queue.front().command == "slowed_reverb") {
+            for (int j = queue.front().parameter_1; j < input_1.second_length; j++) {
+                input_1.GoToSecond(j);
+                cur_convert->AddFile_1(input_1.GetSec());
+                cur_convert->ChooseVolume(queue.front().parameter_2);
+                input_1.GoToSecond(j);
+                input_1.ChangeLastSec(cur_convert->convert());
+            }
+        }
+
         queue.pop();
     }
 }

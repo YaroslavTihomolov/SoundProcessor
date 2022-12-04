@@ -11,10 +11,12 @@ class mix: public convertor {
 public:
     mix();
     unsigned long* convert();
+    std::string description();
 };
 
 namespace {
     ConverterFactoryRegistration::ConverterFactoryRegistration<mix> mix("mix");
+    ParserRegistration::ParserRegistration(description());
 }
 
 #endif //SOUNDPROCESSOR_MIX_H

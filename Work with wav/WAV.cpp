@@ -21,6 +21,7 @@ wav_file::wav_file(std::string file_name) {
         fseek(f, chunk.size, SEEK_CUR); //skip chunk data bytes
         sample_start_pos += chunk.size;
     }
+
     samples_count = chunk.size * 8 / header.wBitsPerSample;
     second_length = samples_count / samples_in_sec;
 }

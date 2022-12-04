@@ -6,16 +6,24 @@
 //
 #include "Parser.h"
 
-Parser::Parser(int argc, char** argv) {
+Parser::Parser::Parser(int argc, char** argv) {
     po::options_description desc("Generate parameters");
     desc.add_options()
             ("help", "produce help message")
-            ("output", po::value<std::string> (&output), "--output=[File_Name.wav]")
-            ("files", po::value< std::vector<std::string> >(&files), "--files={File_Name.wav}")
-            ("config", po::value<std::string> (&config), "--steps")
-            ;
+            ("output", po::value<std::string>(&output), "--output=[File_Name.wav]")
+            ("files", po::value<std::vector<std::string> >(&files), "--files={File_Name.wav}")
+            ("config", po::value<std::string>(&config), "--steps");
 
     po::store(po::parse_command_line(argc, argv, desc), vm);
     po::notify(vm);
+
+
+    if (vm.count("help")) {
+        std::cout << desc << help;
+        throw ("call --help\n");
+    }
 }
 
+void Parser::Parser::ParserReg(std::string description) {
+    help += description;
+}
