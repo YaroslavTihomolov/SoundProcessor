@@ -14,6 +14,6 @@ void convertor::AddFile_2(unsigned long* inp_sec_for_mix) {
     sec_buffer_2 = inp_sec_for_mix;
 }
 
-void convertor::ChooseVolume(int inp_volume) {
-    volume = inp_volume;
+void convertor::ChooseSpeed(int inp_volume) {
+    speed = inp_volume;
 }

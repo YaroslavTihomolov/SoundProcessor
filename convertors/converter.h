@@ -15,8 +15,7 @@ public:
     const long samples_in_sec = 44100;
     unsigned long* sec_buffer_1;
     unsigned long* sec_buffer_2;
-    int volume;
-
+    int speed;
     convertor();
 
     virtual unsigned long* convert();
@@ -25,7 +24,7 @@ public:
 
     void AddFile_2(unsigned long* inp_sec_for_mix);
 
-    void ChooseVolume(int);
+    void ChooseSpeed(int);
 };
 
 #endif //SOUNDPROCESSOR_CONVERTER_H

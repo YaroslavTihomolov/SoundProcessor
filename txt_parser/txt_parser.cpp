@@ -18,18 +18,28 @@ std::queue<configuration> config_file::Read() {
         if (!strcmp(config.command.c_str(), "mix") && !strcmp(config.command.c_str(), "mute"))
             throw std::invalid_argument("Wrong data in configuration file");
 
-        if (strcmp(config.command.c_str(), "mix") == 0)
-            if (sscanf(line.c_str(), "%s $%d %d", config.command.c_str(), &config.parameter_1, &config.parameter_2) != 3)
-                throw std::invalid_argument("Wrong data in configuration file");
+        if (strcmp(config.command.c_str(), "mix") == 0) {
+            char res = sscanf(line.c_str(), "%s $%d %d", config.command.c_str(), &config.parameter_1, &config.parameter_2);
+                if (res == 2)
+                    config.parameter_2 = 0;
+                if (res < 2)
+                    throw std::invalid_argument("Wrong data in configuration file");
+        }
 
-        if (strcmp(config.command.c_str(), "mute") == 0)
+        else if (strcmp(config.command.c_str(), "mute") == 0) {
             if (sscanf(line.c_str(), "%s %d %d", config.command.c_str(), &config.parameter_1, &config.parameter_2) != 3)
                 throw std::invalid_argument("Wrong data in configuration file");
+        }
 
-        if (strcmp(config.command.c_str(), "slowed_reverb") == 0)
-            if (sscanf(line.c_str(), "%s %d %d", config.command.c_str(), &config.parameter_1, &config.parameter_2) != 3)
+        else if (strcmp(config.command.c_str(), "speedup") == 0) {
+            if (sscanf(line.c_str(), "%s %d", config.command.c_str(), &config.parameter_1) != 2)
                 throw std::invalid_argument("Wrong data in configuration file");
+        }
 
+        else throw std::invalid_argument("Wrong convertor in configuration file");
+
+        if (config.parameter_2 < 0 || config.parameter_1 < 0)
+            throw std::invalid_argument("Wrong parameters in configuration file");
         config_2.command = config.command.c_str();
         config_2.parameter_1 = config.parameter_1;
         config_2.parameter_2 = config.parameter_2;

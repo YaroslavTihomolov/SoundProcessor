@@ -50,6 +50,10 @@ public:
 
     void RecordResult(std::string copy_file);
 
+    void RecordSpeedHead(int, FILE*);
+
+    void RecordSpeedSample(unsigned long* changed_sec_buffer, FILE*, int);
+
     ~wav_file();
 };
 

@@ -39,9 +39,21 @@ unsigned long* wav_file::GetSec() {
 }
 
 void wav_file::ChangeLastSec(unsigned long* changed_sec_buffer) {
-    //fseek(f, -samples_in_sec, SEEK_CUR);
     for (int j = 0; j < samples_in_sec; j++) {
         fwrite(&changed_sec_buffer[j], short_size, 1, f);
+    }
+}
+
+void wav_file::RecordSpeedHead(int speed, FILE *f_fast) {
+    chunk.size /= speed;
+    fwrite(&header, sizeof(header), 1, f_fast);
+    fwrite(&chunk, sizeof(chunk), 1, f_fast);
+}
+
+void wav_file::RecordSpeedSample(unsigned long* changed_sec_buffer, FILE* f_fast, int speed) {
+    int len = samples_in_sec / speed;
+    for (int i = 0; i < len; i++) {
+        fwrite(&changed_sec_buffer[i], short_size, 1, f_fast);
     }
 }
 
