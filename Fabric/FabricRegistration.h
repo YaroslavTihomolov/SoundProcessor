@@ -10,7 +10,7 @@
 struct configuration;
 
 namespace ConverterFactoryRegistration {
-    template <typename T>
+    template <typename T, class ...Args>
     class ConverterFactoryRegistration
     {
     public:
@@ -18,7 +18,7 @@ namespace ConverterFactoryRegistration {
         ConverterFactoryRegistration(const std::string name) {
             TheConverterFactory::Instance().RegisterConverter(
                     name,
-                    []() { return static_cast<convertor*>(new T()); }
+                    [](Args...args) { return static_cast<convertor*>(new T(args...)); }
             );
         }
     };

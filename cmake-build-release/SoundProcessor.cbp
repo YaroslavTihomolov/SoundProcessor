@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="SoundProcessor"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/CLionProjects/SoundProcessor/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/CLionProjects/SoundProcessor/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/CLionProjects/SoundProcessor/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/CLionProjects/SoundProcessor/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/CLionProjects/SoundProcessor/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/CLionProjects/SoundProcessor/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/CLionProjects/SoundProcessor/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/CLionProjects/SoundProcessor/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/CLionProjects/SoundProcessor/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/CLionProjects/SoundProcessor/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SoundProcessor">
+				<Option output="C:/CLionProjects/SoundProcessor/cmake-build-release/SoundProcessor.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/CLionProjects/SoundProcessor/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/MinGW/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/CLionProjects/SoundProcessor/cmake-build-release/Makefile&quot;  VERBOSE=1 SoundProcessor"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/CLionProjects/SoundProcessor/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/CLionProjects/SoundProcessor/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/CLionProjects/SoundProcessor/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SoundProcessor/fast">
+				<Option output="C:/CLionProjects/SoundProcessor/cmake-build-release/SoundProcessor.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/CLionProjects/SoundProcessor/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/MinGW/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0/x86_64-w64-mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include/c++/11.2.0/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/CLionProjects/SoundProcessor/cmake-build-release/Makefile&quot;  VERBOSE=1 SoundProcessor/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/CLionProjects/SoundProcessor/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/CLionProjects/SoundProcessor/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/CLionProjects/SoundProcessor/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/CLionProjects/SoundProcessor/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/CLionProjects/SoundProcessor/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/CLionProjects/SoundProcessor/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/CLionProjects/SoundProcessor/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/CLionProjects/SoundProcessor/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/CLionProjects/SoundProcessor/Fabric/Fabric.cpp">
+			<Option target="SoundProcessor"/>
+		</Unit>
+		<Unit filename="C:/CLionProjects/SoundProcessor/Fabric/Fabric.h">
+			<Option target="SoundProcessor"/>
+		</Unit>
+		<Unit filename="C:/CLionProjects/SoundProcessor/Fabric/FabricRegistration.h">
+			<Option target="SoundProcessor"/>
+		</Unit>
+		<Unit filename="C:/CLionProjects/SoundProcessor/Parser/Parser.cpp">
+			<Option target="SoundProcessor"/>
+		</Unit>
+		<Unit filename="C:/CLionProjects/SoundProcessor/Parser/Parser.h">
+			<Option target="SoundProcessor"/>
+		</Unit>
+		<Unit filename="C:/CLionProjects/SoundProcessor/Parser/ParserRegistration.h">
+			<Option target="SoundProcessor"/>
+		</Unit>
+		<Unit filename="C:/CLionProjects/SoundProcessor/Sound Processor/SoundProcessor.cpp">
+			<Option target="SoundProcessor"/>
+		</Unit>
+		<Unit filename="C:/CLionProjects/SoundProcessor/Sound Processor/SoundProcessor.h">
+			<Option target="SoundProcessor"/>
+		</Unit>
+		<Unit filename="C:/CLionProjects/SoundProcessor/Work with wav/WAV.cpp">
+			<Option target="SoundProcessor"/>
+		</Unit>
+		<Unit filename="C:/CLionProjects/SoundProcessor/Work with wav/WAV.h">
+			<Option target="SoundProcessor"/>
+		</Unit>
+		<Unit filename="C:/CLionProjects/SoundProcessor/convertors/converter.cpp">
+			<Option target="SoundProcessor"/>
+		</Unit>
+		<Unit filename="C:/CLionProjects/SoundProcessor/convertors/converter.h">
+			<Option target="SoundProcessor"/>
+		</Unit>
+		<Unit filename="C:/CLionProjects/SoundProcessor/convertors/mix/mix.cpp">
+			<Option target="SoundProcessor"/>
+		</Unit>
+		<Unit filename="C:/CLionProjects/SoundProcessor/convertors/mix/mix.h">
+			<Option target="SoundProcessor"/>
+		</Unit>
+		<Unit filename="C:/CLionProjects/SoundProcessor/convertors/mute/mute.cpp">
+			<Option target="SoundProcessor"/>
+		</Unit>
+		<Unit filename="C:/CLionProjects/SoundProcessor/convertors/mute/mute.h">
+			<Option target="SoundProcessor"/>
+		</Unit>
+		<Unit filename="C:/CLionProjects/SoundProcessor/convertors/slowed_reverb/slowed_reverb.cpp">
+			<Option target="SoundProcessor"/>
+		</Unit>
+		<Unit filename="C:/CLionProjects/SoundProcessor/convertors/slowed_reverb/slowed_reverb.h">
+			<Option target="SoundProcessor"/>
+		</Unit>
+		<Unit filename="C:/CLionProjects/SoundProcessor/main.cpp">
+			<Option target="SoundProcessor"/>
+		</Unit>
+		<Unit filename="C:/CLionProjects/SoundProcessor/txt_parser/txt_parser.cpp">
+			<Option target="SoundProcessor"/>
+		</Unit>
+		<Unit filename="C:/CLionProjects/SoundProcessor/txt_parser/txt_parser.h">
+			<Option target="SoundProcessor"/>
+		</Unit>
+		<Unit filename="C:/CLionProjects/SoundProcessor/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
