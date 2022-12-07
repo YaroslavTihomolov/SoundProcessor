@@ -2,8 +2,8 @@
 // Created by я on 03.12.2022.
 //
 
-#ifndef SOUNDPROCESSOR_SLOWED_REVERB_H
-#define SOUNDPROCESSOR_SLOWED_REVERB_H
+#ifndef SOUNDPROCESSOR_SPEEDUP_H
+#define SOUNDPROCESSOR_SPEEDUP_H
 
 #include "../converter.h"
 
@@ -18,4 +18,4 @@ namespace {
     ConverterFactoryRegistration::ConverterFactoryRegistration<speedup> speedup("speedup");
 }
 
-#endif //SOUNDPROCESSOR_SLOWED_REVERB_H
+#endif //SOUNDPROCESSOR_SPEEDUP_H

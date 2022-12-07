@@ -1,7 +1,7 @@
 //
 // Created by я on 03.12.2022.
 //
-#include "slowed_reverb.h"
+#include "speedup.h"
 
 speedup::speedup() { }
 
