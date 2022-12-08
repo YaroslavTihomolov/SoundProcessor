@@ -12,7 +12,7 @@ class SoundProcessor {
 private:
     wav_file file;
     std::queue<configuration> queue;
-    convertor *cur_convert;
+    std::shared_ptr<converter> cur_convert;
     void mute();
     void mix();
     void speedup();

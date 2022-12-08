@@ -2,7 +2,6 @@
 #include "txt_parser/txt_parser.h"
 #include "Parser/Parser.h"
 #include "Sound Processor/SoundProcessor.h"
-#include <windows.h>
 
 int main(int argc, char **argv) {
     try {
@@ -12,9 +11,7 @@ int main(int argc, char **argv) {
         wav_file result(Parser::Instance().output);
         SoundProcessor conv(result);
     } catch (std::invalid_argument const& ex) {
-        HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE);
-        SetConsoleTextAttribute(h, 4);
-        std::cout << ex.what() << '\n';
+        std::cerr << ex.what() << '\n';
     }
 
     return 0;

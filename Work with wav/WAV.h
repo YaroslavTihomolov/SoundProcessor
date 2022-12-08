@@ -10,6 +10,7 @@
 
 class wav_file {
 private:
+    bool valid_check();
     static const int samples_in_sec = 44100;
     struct wav_header_t {
         char rId[4];
@@ -42,11 +43,9 @@ public:
 
     wav_file(std::string file_name);
 
-    void GoToSecond(int second);
+    unsigned long* GetSec(int second);
 
-    unsigned long* GetSec();
-
-    void ChangeLastSec(unsigned long* changed_sec_buffer);
+    void ChangeLastSec(unsigned long* changed_sec_buffer, int);
 
     void RecordResult(std::string copy_file);
 

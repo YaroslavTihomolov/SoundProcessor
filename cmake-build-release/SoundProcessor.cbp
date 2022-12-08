@@ -130,10 +130,10 @@
 		<Unit filename="C:/CLionProjects/SoundProcessor/convertors/mute/mute.h">
 			<Option target="SoundProcessor"/>
 		</Unit>
-		<Unit filename="C:/CLionProjects/SoundProcessor/convertors/slowed_reverb/slowed_reverb.cpp">
+		<Unit filename="C:/CLionProjects/SoundProcessor/convertors/speedup/speedup.cpp">
 			<Option target="SoundProcessor"/>
 		</Unit>
-		<Unit filename="C:/CLionProjects/SoundProcessor/convertors/slowed_reverb/slowed_reverb.h">
+		<Unit filename="C:/CLionProjects/SoundProcessor/convertors/speedup/speedup.h">
 			<Option target="SoundProcessor"/>
 		</Unit>
 		<Unit filename="C:/CLionProjects/SoundProcessor/main.cpp">

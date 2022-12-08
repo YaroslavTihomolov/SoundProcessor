@@ -15,7 +15,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/CLionProjects/SoundProcessor/convertors/converter.cpp" "C:/CLionProjects/SoundProcessor/cmake-build-release/CMakeFiles/SoundProcessor.dir/convertors/converter.cpp.obj"
   "C:/CLionProjects/SoundProcessor/convertors/mix/mix.cpp" "C:/CLionProjects/SoundProcessor/cmake-build-release/CMakeFiles/SoundProcessor.dir/convertors/mix/mix.cpp.obj"
   "C:/CLionProjects/SoundProcessor/convertors/mute/mute.cpp" "C:/CLionProjects/SoundProcessor/cmake-build-release/CMakeFiles/SoundProcessor.dir/convertors/mute/mute.cpp.obj"
-  "C:/CLionProjects/SoundProcessor/convertors/slowed_reverb/slowed_reverb.cpp" "C:/CLionProjects/SoundProcessor/cmake-build-release/CMakeFiles/SoundProcessor.dir/convertors/slowed_reverb/slowed_reverb.cpp.obj"
+  "C:/CLionProjects/SoundProcessor/convertors/speedup/speedup.cpp" "C:/CLionProjects/SoundProcessor/cmake-build-release/CMakeFiles/SoundProcessor.dir/convertors/speedup/speedup.cpp.obj"
   "C:/CLionProjects/SoundProcessor/main.cpp" "C:/CLionProjects/SoundProcessor/cmake-build-release/CMakeFiles/SoundProcessor.dir/main.cpp.obj"
   "C:/CLionProjects/SoundProcessor/txt_parser/txt_parser.cpp" "C:/CLionProjects/SoundProcessor/cmake-build-release/CMakeFiles/SoundProcessor.dir/txt_parser/txt_parser.cpp.obj"
   )

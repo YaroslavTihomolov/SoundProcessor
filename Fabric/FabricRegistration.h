@@ -10,16 +10,13 @@
 struct configuration;
 
 namespace ConverterFactoryRegistration {
-    template <typename T, class ...Args>
+    template <typename T>
     class ConverterFactoryRegistration
     {
     public:
         ConverterFactoryRegistration() = default;
         ConverterFactoryRegistration(const std::string name) {
-            TheConverterFactory::Instance().RegisterConverter(
-                    name,
-                    [](Args...args) { return static_cast<convertor*>(new T(args...)); }
-            );
+            GenericObjectFactory::GenericObjectFactory<std::string, >
         }
     };
 

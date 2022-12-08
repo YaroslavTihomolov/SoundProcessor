@@ -3,17 +3,17 @@
 //
 #include "converter.h"
 
-convertor::convertor() = default;
-unsigned long* convertor::convert() { return 0; }
+converter::converter() = default;
+unsigned long* converter::convert() { return 0; }
 
-void convertor::AddFile_1(unsigned long* inp_sec) {
+void converter::AddFile_1(unsigned long* inp_sec) {
     sec_buffer_1 = inp_sec;
 }
 
-void convertor::AddFile_2(unsigned long* inp_sec_for_mix) {
+void converter::AddFile_2(unsigned long* inp_sec_for_mix) {
     sec_buffer_2 = inp_sec_for_mix;
 }
 
-void convertor::ChooseSpeed(int inp_volume) {
+void converter::ChooseSpeed(int inp_volume) {
     speed = inp_volume;
 }

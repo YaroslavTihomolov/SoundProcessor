@@ -177,19 +177,19 @@ CMakeFiles/SoundProcessor.dir/Sound_Processor/SoundProcessor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SoundProcessor.dir/Sound_Processor/SoundProcessor.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\CLionProjects\SoundProcessor\Sound Processor\SoundProcessor.cpp" -o CMakeFiles\SoundProcessor.dir\Sound_Processor\SoundProcessor.cpp.s
 
-CMakeFiles/SoundProcessor.dir/convertors/slowed_reverb/slowed_reverb.cpp.obj: CMakeFiles/SoundProcessor.dir/flags.make
-CMakeFiles/SoundProcessor.dir/convertors/slowed_reverb/slowed_reverb.cpp.obj: CMakeFiles/SoundProcessor.dir/includes_CXX.rsp
-CMakeFiles/SoundProcessor.dir/convertors/slowed_reverb/slowed_reverb.cpp.obj: ../convertors/slowed_reverb/slowed_reverb.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\CLionProjects\SoundProcessor\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SoundProcessor.dir/convertors/slowed_reverb/slowed_reverb.cpp.obj"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SoundProcessor.dir\convertors\slowed_reverb\slowed_reverb.cpp.obj -c C:\CLionProjects\SoundProcessor\convertors\slowed_reverb\slowed_reverb.cpp
+CMakeFiles/SoundProcessor.dir/convertors/speedup/speedup.cpp.obj: CMakeFiles/SoundProcessor.dir/flags.make
+CMakeFiles/SoundProcessor.dir/convertors/speedup/speedup.cpp.obj: CMakeFiles/SoundProcessor.dir/includes_CXX.rsp
+CMakeFiles/SoundProcessor.dir/convertors/speedup/speedup.cpp.obj: ../convertors/speedup/speedup.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\CLionProjects\SoundProcessor\cmake-build-release\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SoundProcessor.dir/convertors/speedup/speedup.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SoundProcessor.dir\convertors\speedup\speedup.cpp.obj -c C:\CLionProjects\SoundProcessor\convertors\speedup\speedup.cpp
 
-CMakeFiles/SoundProcessor.dir/convertors/slowed_reverb/slowed_reverb.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SoundProcessor.dir/convertors/slowed_reverb/slowed_reverb.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\CLionProjects\SoundProcessor\convertors\slowed_reverb\slowed_reverb.cpp > CMakeFiles\SoundProcessor.dir\convertors\slowed_reverb\slowed_reverb.cpp.i
+CMakeFiles/SoundProcessor.dir/convertors/speedup/speedup.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SoundProcessor.dir/convertors/speedup/speedup.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\CLionProjects\SoundProcessor\convertors\speedup\speedup.cpp > CMakeFiles\SoundProcessor.dir\convertors\speedup\speedup.cpp.i
 
-CMakeFiles/SoundProcessor.dir/convertors/slowed_reverb/slowed_reverb.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SoundProcessor.dir/convertors/slowed_reverb/slowed_reverb.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\CLionProjects\SoundProcessor\convertors\slowed_reverb\slowed_reverb.cpp -o CMakeFiles\SoundProcessor.dir\convertors\slowed_reverb\slowed_reverb.cpp.s
+CMakeFiles/SoundProcessor.dir/convertors/speedup/speedup.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SoundProcessor.dir/convertors/speedup/speedup.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\CLionProjects\SoundProcessor\convertors\speedup\speedup.cpp -o CMakeFiles\SoundProcessor.dir\convertors\speedup\speedup.cpp.s
 
 CMakeFiles/SoundProcessor.dir/convertors/converter.cpp.obj: CMakeFiles/SoundProcessor.dir/flags.make
 CMakeFiles/SoundProcessor.dir/convertors/converter.cpp.obj: CMakeFiles/SoundProcessor.dir/includes_CXX.rsp
@@ -215,7 +215,7 @@ SoundProcessor_OBJECTS = \
 "CMakeFiles/SoundProcessor.dir/convertors/mix/mix.cpp.obj" \
 "CMakeFiles/SoundProcessor.dir/txt_parser/txt_parser.cpp.obj" \
 "CMakeFiles/SoundProcessor.dir/Sound_Processor/SoundProcessor.cpp.obj" \
-"CMakeFiles/SoundProcessor.dir/convertors/slowed_reverb/slowed_reverb.cpp.obj" \
+"CMakeFiles/SoundProcessor.dir/convertors/speedup/speedup.cpp.obj" \
 "CMakeFiles/SoundProcessor.dir/convertors/converter.cpp.obj"
 
 # External object files for target SoundProcessor
@@ -229,7 +229,7 @@ SoundProcessor.exe: CMakeFiles/SoundProcessor.dir/convertors/mute/mute.cpp.obj
 SoundProcessor.exe: CMakeFiles/SoundProcessor.dir/convertors/mix/mix.cpp.obj
 SoundProcessor.exe: CMakeFiles/SoundProcessor.dir/txt_parser/txt_parser.cpp.obj
 SoundProcessor.exe: CMakeFiles/SoundProcessor.dir/Sound_Processor/SoundProcessor.cpp.obj
-SoundProcessor.exe: CMakeFiles/SoundProcessor.dir/convertors/slowed_reverb/slowed_reverb.cpp.obj
+SoundProcessor.exe: CMakeFiles/SoundProcessor.dir/convertors/speedup/speedup.cpp.obj
 SoundProcessor.exe: CMakeFiles/SoundProcessor.dir/convertors/converter.cpp.obj
 SoundProcessor.exe: CMakeFiles/SoundProcessor.dir/build.make
 SoundProcessor.exe: C:/MinGW/lib/libboost_program_options.a

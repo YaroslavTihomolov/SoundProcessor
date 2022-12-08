@@ -296,29 +296,29 @@ convertors/mute/mute.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SoundProcessor.dir\build.make CMakeFiles/SoundProcessor.dir/convertors/mute/mute.cpp.s
 .PHONY : convertors/mute/mute.cpp.s
 
-convertors/slowed_reverb/slowed_reverb.obj: convertors/slowed_reverb/slowed_reverb.cpp.obj
-.PHONY : convertors/slowed_reverb/slowed_reverb.obj
+convertors/speedup/speedup.obj: convertors/speedup/speedup.cpp.obj
+.PHONY : convertors/speedup/speedup.obj
 
 # target to build an object file
-convertors/slowed_reverb/slowed_reverb.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SoundProcessor.dir\build.make CMakeFiles/SoundProcessor.dir/convertors/slowed_reverb/slowed_reverb.cpp.obj
-.PHONY : convertors/slowed_reverb/slowed_reverb.cpp.obj
+convertors/speedup/speedup.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SoundProcessor.dir\build.make CMakeFiles/SoundProcessor.dir/convertors/speedup/speedup.cpp.obj
+.PHONY : convertors/speedup/speedup.cpp.obj
 
-convertors/slowed_reverb/slowed_reverb.i: convertors/slowed_reverb/slowed_reverb.cpp.i
-.PHONY : convertors/slowed_reverb/slowed_reverb.i
+convertors/speedup/speedup.i: convertors/speedup/speedup.cpp.i
+.PHONY : convertors/speedup/speedup.i
 
 # target to preprocess a source file
-convertors/slowed_reverb/slowed_reverb.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SoundProcessor.dir\build.make CMakeFiles/SoundProcessor.dir/convertors/slowed_reverb/slowed_reverb.cpp.i
-.PHONY : convertors/slowed_reverb/slowed_reverb.cpp.i
+convertors/speedup/speedup.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SoundProcessor.dir\build.make CMakeFiles/SoundProcessor.dir/convertors/speedup/speedup.cpp.i
+.PHONY : convertors/speedup/speedup.cpp.i
 
-convertors/slowed_reverb/slowed_reverb.s: convertors/slowed_reverb/slowed_reverb.cpp.s
-.PHONY : convertors/slowed_reverb/slowed_reverb.s
+convertors/speedup/speedup.s: convertors/speedup/speedup.cpp.s
+.PHONY : convertors/speedup/speedup.s
 
 # target to generate assembly for a file
-convertors/slowed_reverb/slowed_reverb.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SoundProcessor.dir\build.make CMakeFiles/SoundProcessor.dir/convertors/slowed_reverb/slowed_reverb.cpp.s
-.PHONY : convertors/slowed_reverb/slowed_reverb.cpp.s
+convertors/speedup/speedup.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SoundProcessor.dir\build.make CMakeFiles/SoundProcessor.dir/convertors/speedup/speedup.cpp.s
+.PHONY : convertors/speedup/speedup.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -398,9 +398,9 @@ help:
 	@echo ... convertors/mute/mute.obj
 	@echo ... convertors/mute/mute.i
 	@echo ... convertors/mute/mute.s
-	@echo ... convertors/slowed_reverb/slowed_reverb.obj
-	@echo ... convertors/slowed_reverb/slowed_reverb.i
-	@echo ... convertors/slowed_reverb/slowed_reverb.s
+	@echo ... convertors/speedup/speedup.obj
+	@echo ... convertors/speedup/speedup.i
+	@echo ... convertors/speedup/speedup.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -36,7 +36,7 @@ std::queue<configuration> config_file::Read() {
                 throw std::invalid_argument("Wrong data in configuration file");
         }
 
-        else throw std::invalid_argument("Wrong convertor in configuration file");
+        else throw std::invalid_argument("Wrong converter in configuration file");
 
         if (config.parameter_2 < 0 || config.parameter_1 < 0)
             throw std::invalid_argument("Wrong parameters in configuration file");

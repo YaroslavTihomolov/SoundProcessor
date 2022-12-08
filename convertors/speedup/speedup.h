@@ -7,15 +7,14 @@
 
 #include "../converter.h"
 
-class speedup: public convertor {
+class speedup: public converter {
 public:
     speedup();
-
     unsigned long *convert();
 };
 
 namespace {
-    ConverterFactoryRegistration::ConverterFactoryRegistration<speedup> speedup("speedup");
+    bool add = GenericObjectFactory<std::string, converter>::Instance().add<speedup>("speedup");
 }
 
 #endif //SOUNDPROCESSOR_SPEEDUP_H
