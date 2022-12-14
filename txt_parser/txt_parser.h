@@ -9,6 +9,7 @@
 #include <fstream>
 #include <queue>
 #include <cstring>
+#include "../Exceptions/Exceptions.h"
 
 struct configuration {
     std::string command;

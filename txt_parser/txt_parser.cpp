@@ -16,30 +16,30 @@ std::queue<configuration> config_file::Read() {
         sscanf(line.c_str(), "%s", config.command.c_str());
 
         if (!strcmp(config.command.c_str(), "mix") && !strcmp(config.command.c_str(), "mute"))
-            throw std::invalid_argument("Wrong data in configuration file");
+            throw Exceptions("Wrong data in configuration file", WRONG_CONFIGURATION);
 
         if (strcmp(config.command.c_str(), "mix") == 0) {
             char res = sscanf(line.c_str(), "%s $%d %d", config.command.c_str(), &config.parameter_1, &config.parameter_2);
                 if (res == 2)
                     config.parameter_2 = 0;
                 if (res < 2)
-                    throw std::invalid_argument("Wrong data in configuration file");
+                    throw Exceptions("Wrong data in configuration file", WRONG_CONFIGURATION);
         }
 
         else if (strcmp(config.command.c_str(), "mute") == 0) {
             if (sscanf(line.c_str(), "%s %d %d", config.command.c_str(), &config.parameter_1, &config.parameter_2) != 3)
-                throw std::invalid_argument("Wrong data in configuration file");
+                throw Exceptions("Wrong data in configuration file", WRONG_CONFIGURATION);
         }
 
         else if (strcmp(config.command.c_str(), "speedup") == 0) {
             if (sscanf(line.c_str(), "%s %d", config.command.c_str(), &config.parameter_1) != 2)
-                throw std::invalid_argument("Wrong data in configuration file");
+                throw Exceptions("Wrong data in configuration file", WRONG_CONFIGURATION);
         }
 
-        else throw std::invalid_argument("Wrong converter in configuration file");
+        else throw Exceptions("Wrong converter in configuration file", WRONG_CONFIGURATION);
 
         if (config.parameter_2 < 0 || config.parameter_1 < 0)
-            throw std::invalid_argument("Wrong parameters in configuration file");
+            throw Exceptions("Wrong parameters in configuration file", WRONG_CONFIGURATION);
         config_2.command = config.command.c_str();
         config_2.parameter_1 = config.parameter_1;
         config_2.parameter_2 = config.parameter_2;

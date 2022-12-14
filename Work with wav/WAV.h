@@ -7,6 +7,7 @@
 #include <fstream>
 #include <cstring>
 #include <iostream>
+#include "../Parser/Parser.h"
 
 class wav_file {
 private:
@@ -25,10 +26,13 @@ private:
         unsigned short nBlockAlign;
         unsigned short wBitsPerSample;
     };
+
     struct chunk_t {
         char id[4];
         unsigned long size;
     };
+
+    std::string name;
     int samples_count;
     chunk_t chunk;
     FILE *f;
@@ -36,22 +40,31 @@ private:
     int sample_start_pos;
     char short_size = 2;
     wav_header_t header;
+    const char* flag;
+    void open_file(std::string);
 public:
     int second_length;
 
+    void ChooseFile(std::string, const char*);
+
     wav_file();
 
-    wav_file(std::string file_name);
+    wav_file(std::string, const char*);
 
-    unsigned long* GetSec(int second);
+    unsigned long* GetSec(int);
 
-    void ChangeLastSec(unsigned long* changed_sec_buffer, int);
 
-    void RecordResult(std::string copy_file);
+    void RecordResult(std::string);
 
     void RecordSpeedHead(int, FILE*);
 
-    void RecordSpeedSample(unsigned long* changed_sec_buffer, FILE*, int);
+    void RecordSpeedSample(unsigned long*, FILE*, int);
+
+    void RemoveFile();
+
+    unsigned long* operator[](int);
+
+    void Rename();
 
     ~wav_file();
 };

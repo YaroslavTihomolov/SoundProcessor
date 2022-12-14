@@ -17,26 +17,26 @@ void Parser::ParsInput(int argc, char** argv) {
     try {
         po::store(po::parse_command_line(argc, argv, desc), vm);
         po::notify(vm);
-    } catch (std::invalid_argument const& ex) {
-        throw(ex);
+    } catch (po::error &e) {
+        throw Exceptions(e.what(), BAD_PROG_ARGS);
     }
 
-    if (output.find_last_not_of(".wav") == std::string::npos)
-        throw("Wrong output file format");
+    if (output.find(".wav") == std::string::npos)
+        throw Exceptions("Wrong output file format", WRONG_FORMAT);
 
     for (int i = 0; i < files.size(); i++) {
-        if (files[i].find_last_not_of(".wav") == std::string::npos)
-            throw("Wrong file format");
+        if (files[i].find(".wav") == std::string::npos)
+            throw Exceptions("Wrong file format", WRONG_FORMAT);
     }
 
-    if (config.find_last_not_of(".wav") == std::string::npos)
-        throw("Wrong config file format");
+    if (config.find(".txt") == std::string::npos)
+        throw Exceptions("Wrong config file format", WRONG_FORMAT);
 
     if (output.empty())
-        throw("Specify output file");
+        throw Exceptions("Specify output file", WRONG_PROG_ARGS);
 
     if (config.empty())
-        throw("Specify config file");
+        throw Exceptions("Specify config file", WRONG_PROG_ARGS);
 
     if (vm.count("help")) {
         std::cout << desc << help;
