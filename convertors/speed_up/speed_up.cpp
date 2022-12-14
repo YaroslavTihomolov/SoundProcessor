@@ -1,10 +1,9 @@
 //
 // Created by я on 03.12.2022.
 //
-#include "speedup.h"
+#include "speed_up.h"
 
-speedup::speedup() {}
-
+speedup::speedup() { }
 
 unsigned long* speedup::convert() {
     int len = samples_in_sec / speed;
@@ -12,4 +11,3 @@ unsigned long* speedup::convert() {
         sec_buffer_1[i] = sec_buffer_1[i * 2];
     return this->sec_buffer_1;
 }
-

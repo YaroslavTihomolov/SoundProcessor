@@ -10,8 +10,9 @@ int main(int argc, char **argv) {
         input_1.RecordResult(Parser::Instance().output);
         wav_file result(Parser::Instance().output);
         SoundProcessor conv(result);
-    } catch (std::invalid_argument const& ex) {
-        std::cerr << ex.what() << '\n';
+    } catch (Exceptions& ex) {
+        std::cerr << ex.what_err() << '\n';
+        return ex.ret_code();
     }
 
     return 0;

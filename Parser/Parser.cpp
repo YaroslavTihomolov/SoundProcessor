@@ -1,9 +1,5 @@
 //
 // Created by я on 18.11.2022.
-//
-//
-// Created by я on 06.11.2022.
-//
 #include "Parser.h"
 
 void Parser::ParsInput(int argc, char** argv) {

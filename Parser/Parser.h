@@ -9,7 +9,7 @@
 #include "boost/program_options.hpp"
 #include <string>
 #include <vector>
-#include "../Exceptions/Exceptions.h"
+#include "../Exception_class/Exception.h"
 
 
 namespace po = boost::program_options;

@@ -20,10 +20,10 @@ std::queue<configuration> config_file::Read() {
 
         if (strcmp(config.command.c_str(), "mix") == 0) {
             char res = sscanf(line.c_str(), "%s $%d %d", config.command.c_str(), &config.parameter_1, &config.parameter_2);
-                if (res == 2)
-                    config.parameter_2 = 0;
-                if (res < 2)
-                    throw Exceptions("Wrong data in configuration file", WRONG_CONFIGURATION);
+            if (res == 2)
+                config.parameter_2 = 0;
+            if (res < 2)
+                throw Exceptions("Wrong data in configuration file", WRONG_CONFIGURATION);
         }
 
         else if (strcmp(config.command.c_str(), "mute") == 0) {

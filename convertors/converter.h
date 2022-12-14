@@ -6,19 +6,17 @@
 #define SOUNDPROCESSOR_CONVERTER_H
 #include "../Work with wav/WAV.h"
 #include "../txt_parser/txt_parser.h"
-#include "../Fabric/Fabric.h"
+#include "../Fabric/FabricRegistration.h"
 #include "../Parser/ParserRegistration.h"
 
 
-class converter {
+class convertor {
 public:
     const long samples_in_sec = 44100;
     unsigned long* sec_buffer_1;
     unsigned long* sec_buffer_2;
     int speed;
-    converter();
-
-    static GenericObjectFactory<std::string, converter> fabric;
+    convertor();
 
     virtual unsigned long* convert();
 

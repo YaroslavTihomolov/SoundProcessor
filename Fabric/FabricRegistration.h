@@ -16,7 +16,10 @@ namespace ConverterFactoryRegistration {
     public:
         ConverterFactoryRegistration() = default;
         ConverterFactoryRegistration(const std::string name) {
-            GenericObjectFactory::GenericObjectFactory<std::string, >
+            TheConverterFactory::Instance().RegisterConverter(
+                    name,
+                    []() { return static_cast<convertor*>(new T()); }
+            );
         }
     };
 
